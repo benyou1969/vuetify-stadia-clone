@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="margin:100px">
     <Navbar />
     <v-content>
       <HelloWorld />

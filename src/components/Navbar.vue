@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="white" flat>
-    <div class="d-flex align-center ml-5">
+    <div class="d-flex align-center">
       <v-img
         alt="stadia Logo"
         contain
