@@ -1,21 +1,17 @@
 <template>
-  <v-app style="margin:100px">
+  <v-app style="margin: 1rem 4rem;">
     <Navbar />
-    <v-content>
-      <HelloWorld />
-    </v-content>
+    <v-content> <router-view /></v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
 import Navbar from "./components/Navbar";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
     Navbar
   },
 

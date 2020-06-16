@@ -1,14 +1,14 @@
 <template>
-  <v-app-bar app color="white" flat>
+  <v-app-bar app color="white" flat class="px-12">
     <div class="d-flex align-center">
-      <v-img
-        alt="stadia Logo"
-        contain
-        :src="smallLogo"
-        transition="scale-transition"
-        width="40"
-      />
-
+      <router-link to="/">
+        <v-img
+          alt="stadia Logo"
+          contain
+          :src="smallLogo"
+          transition="scale-transition"
+          width="40"
+      /></router-link>
       <v-img
         alt="stadia Name"
         class="shrink mt-1 hidden-sm-and-down"
@@ -22,13 +22,12 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn elevation text color="#de3334">
+    <v-btn elevation text color="#de3334" link to="/about">
       <span class="mr-2 text-none">About Stadia</span>
     </v-btn>
-    <v-btn elevation text>
+    <v-btn elevation text link to="/games">
       <span class="mr-2 text-none">Games</span>
     </v-btn>
-
     <v-spacer></v-spacer>
 
     <v-btn elevation text color="#de3334">
