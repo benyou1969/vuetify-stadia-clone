@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="white" flat class="px-12">
+  <v-app-bar app color="white" flat class="px-12" hide-on-scroll>
     <div class="d-flex align-center">
       <router-link to="/">
         <v-img
@@ -28,12 +28,12 @@
     <v-btn elevation text link to="/games">
       <span class="mr-2 text-none">Games</span>
     </v-btn>
-    <v-spacer></v-spacer>
+    <v-spacer class="hidden-sm-and-down"></v-spacer>
 
-    <v-btn elevation text color="#de3334">
-      <span class="mr-2 text-none">Sign in</span>
+    <v-btn elevation text color="#de3334" class=" hidden-sm-and-down">
+      <span class="mr-2 text-none  hidden-sm-and-down">Sign in</span>
     </v-btn>
-    <v-btn class="btn-gradient" depressed>
+    <v-btn class="btn-gradient  hidden-sm-and-down" depressed>
       <span class="mr-2 text-none white--text">Try now</span>
     </v-btn>
   </v-app-bar>
