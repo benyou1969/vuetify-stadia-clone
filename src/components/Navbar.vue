@@ -22,10 +22,10 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn elevation text color="#de3334" link to="/about">
+    <v-btn exact text :to="{ name: 'About' }">
       <span class="mr-2 text-none">About Stadia</span>
     </v-btn>
-    <v-btn elevation text link to="/games">
+    <v-btn text :to="{ name: 'Games' }">
       <span class="mr-2 text-none">Games</span>
     </v-btn>
     <v-spacer class="hidden-sm-and-down"></v-spacer>
