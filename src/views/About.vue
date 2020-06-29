@@ -49,7 +49,7 @@
       Get $10 off your first game purchase in the Stadia store with Pro.
     </div>
 
-    <div class="my-1 my-sm-2 my-md-4 mx-4 mx-sm-8 mx-md-16">
+    <div class="my-1 my-sm-2 my-md-4 mx-4 mx-sm-6 mx-md-8">
       <v-card color="transparent" flat>
         <v-row align="center" justify="center">
           <v-col
@@ -61,7 +61,7 @@
             :key="image"
           >
             <v-card class="mx-auto">
-              <v-img :src="image" :lazy-src="image" height="200px"></v-img>
+              <v-img :src="image" :lazy-src="image" height="270px"></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -80,8 +80,8 @@
         <v-col cols="12" sm="12" md="6">
           <v-card flat class="pa-md-2">
             <v-img
-              lazy-src="https://www.gstatic.com/stadia/gamers/landing_page/assets/play_anywhere@2x.jpg"
-              src="https://www.gstatic.com/stadia/gamers/landing_page/assets/play_anywhere@2x.jpg"
+              lazy-src="../assets/images/play_anywhere@2.jpg"
+              src="../assets/images/play_anywhere@2.jpg"
             ></v-img>
           </v-card>
         </v-col>
@@ -135,8 +135,8 @@
         <v-col cols="12" sm="12" md="6">
           <v-card flat color="rgb(248, 248, 249)">
             <v-img
-              src="https://www.gstatic.com/stadia/gamers/landing_page/assets/beacon_hero.png"
-              lazy-src="https://www.gstatic.com/stadia/gamers/landing_page/assets/beacon_hero.png"
+              src="../assets/images/beacon_hero.png"
+              lazy-src="../assets/images/beacon_hero.png"
             ></v-img>
           </v-card>
         </v-col>
@@ -198,19 +198,17 @@
 <script>
 // @ is an alias to /src
 import LogoPro from "@/assets/logo-pro.svg";
-
+import Image1 from "../assets/images/Octopath_Traveler-1.png";
+import Image2 from "../assets/images/NBA2k20.png";
+import Image3 from "../assets/images/Red_Dead_Redemption_2.png";
+import Image4 from "../assets/images/Mortal_Kombat_11.png";
+import Image5 from "../assets/images/DoomEternal.png";
 export default {
   name: "About",
   data: () => ({
     loadNewContent: false,
     logoPro: LogoPro,
-    images: [
-      "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Octopath_Traveler.png",
-      "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/NBA2k20.png",
-      "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Red_Dead_Redemption_2.png",
-      "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Mortal_Kombat_11.png",
-      "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/DoomEternal.png"
-    ]
+    images: [Image1, Image2, Image3, Image4, Image5]
   }),
   methods: {
     showMoreContent(entries) {

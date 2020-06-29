@@ -75,6 +75,11 @@
 
 <script>
 import LogoPro from "@/assets/logo-pro.svg";
+import Image1 from "../assets/images/Octopath_Traveler-1.png";
+import Image2 from "../assets/images/NBA2k20.png";
+import Image3 from "../assets/images/Red_Dead_Redemption_2.png";
+import Image4 from "../assets/images/Mortal_Kombat_11.png";
+import Image5 from "../assets/images/DoomEternal.png";
 
 export default {
   name: "Games",
@@ -84,7 +89,7 @@ export default {
     images: [
       {
         src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Octopath_Traveler.png",
+          Image1,
         title: "Get Packed"
       },
       {
