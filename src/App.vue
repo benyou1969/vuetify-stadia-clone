@@ -1,20 +1,20 @@
 <template>
-  <v-app style="margin: 1rem 4rem;">
-    <Navbar />
-    <v-content> <router-view /></v-content>
+  <v-app>
+    <Appbar />
+    <v-main> <router-view /></v-main>
     <Footer />
   </v-app>
 </template>
 
 <script>
-import Navbar from "./components/Navbar";
+import Appbar from "./components/Appbar";
 import Footer from "./components/Footer";
 
 export default {
   name: "App",
 
   components: {
-    Navbar,
+    Appbar,
     Footer
   },
 
@@ -23,3 +23,9 @@ export default {
   })
 };
 </script>
+
+<style>
+.v-btn--active {
+  color: red !important;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="my-1 my-sm-2 my-md-4 mx-4 mx-sm-8 mx-md-16">
     <div class="d-flex justify-center my-8">
-      <v-img :src="logoPro" max-width="300"></v-img>
+      <v-img :src="logoPro" :lazy-src="logoPro" max-width="300"></v-img>
     </div>
     <div class="text-center text-h4 my-8">
       Build a library of incredible games with Stadia Pro
@@ -11,7 +11,7 @@
     </div>
     <br />
     <div>
-      <v-row align="center" justify="center">
+      <v-row align="start" justify="start">
         <v-col
           cols="4"
           sm="4"
@@ -21,8 +21,14 @@
           :key="image.title"
         >
           <v-card class="mx-auto" outlined color="transparent">
-            <v-img :src="image.src" height="279px"></v-img>
-            <div class="text-center text--caption">{{ image.title }}</div>
+            <v-img
+              :src="image.src"
+              :lazy-src="image.src"
+              :height="$vuetify.breakpoint.smAndDown ? `180` : `300px`"
+            ></v-img>
+            <div class="text-center grey--text text--darken-1 my-2">
+              {{ image.title }}
+            </div>
           </v-card>
         </v-col>
       </v-row>
@@ -40,19 +46,25 @@
       >
       devices, with no waiting for downloads or in-game updates
     </div>
-    <div>
-      <v-row align="center" justify="center">
+    <div v-intersect="showMoreContent">
+      <v-row align="start" justify="start" v-if="loadNewContent">
         <v-col
           cols="4"
           sm="4"
-          md="2"
+          md="3"
           lg="2"
           v-for="image in otherImages"
           :key="image.title"
         >
           <v-card class="mx-auto" outlined color="transparent">
-            <v-img :src="image.src" height="200px"></v-img>
-            <div class="text-center">{{ image.title }}</div>
+            <v-img
+              :src="image.src"
+              :lazy-src="image.src"
+              :height="$vuetify.breakpoint.smAndDown ? `180` : `300`"
+            ></v-img>
+            <div class="text-center grey--text text--darken-1 my-2">
+              {{ image.title }}
+            </div>
           </v-card>
         </v-col>
       </v-row>
@@ -67,6 +79,7 @@ import LogoPro from "@/assets/logo-pro.svg";
 export default {
   name: "Games",
   data: () => ({
+    loadNewContent: false,
     logoPro: LogoPro,
     images: [
       {
@@ -208,11 +221,6 @@ export default {
       },
       {
         src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Kine.png",
-        title: "Kine"
-      },
-      {
-        src:
           "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Metro_Exodus.png",
         title: "Metro Exodus"
       },
@@ -267,7 +275,13 @@ export default {
         title: "Wolfenstein Young Blood"
       }
     ]
-  })
+  }),
+  methods: {
+    showMoreContent(entries) {
+      console.log(entries[0].isIntersecting);
+      this.loadNewContent = entries[0].isIntersecting;
+    }
+  }
 };
 </script>
 

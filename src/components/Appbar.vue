@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="white" flat class="px-12" hide-on-scroll>
+  <v-app-bar app color="white" flat class=" px-sm-4 px-md-12" hide-on-scroll>
     <div class="d-flex align-center">
       <router-link to="/">
         <v-img
@@ -22,18 +22,30 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn exact text :to="{ name: 'About' }">
+    <v-btn
+      exact
+      text
+      :to="{ name: 'About' }"
+      :ripple="false"
+      class="btn-removed-background"
+    >
       <span class="mr-2 text-none">About Stadia</span>
     </v-btn>
-    <v-btn text :to="{ name: 'Games' }">
+    <v-btn text :to="{ name: 'Games' }" :ripple="false">
       <span class="mr-2 text-none">Games</span>
     </v-btn>
     <v-spacer class="hidden-sm-and-down"></v-spacer>
 
-    <v-btn elevation text color="#de3334" class=" hidden-sm-and-down">
+    <v-btn
+      elevation
+      text
+      color="#de3334"
+      class=" hidden-sm-and-down"
+      :ripple="false"
+    >
       <span class="mr-2 text-none  hidden-sm-and-down">Sign in</span>
     </v-btn>
-    <v-btn class="btn-gradient  hidden-sm-and-down" depressed>
+    <v-btn class="btn-gradient  hidden-sm-and-down" depressed :ripple="false">
       <span class="mr-2 text-none white--text">Try now</span>
     </v-btn>
   </v-app-bar>
@@ -43,7 +55,7 @@
 import Logo from "../assets/text-logo.svg";
 import SmallLogo from "../assets/logo.svg";
 export default {
-  name: "Navbar",
+  name: "Appbar",
 
   data: () => ({
     logo: Logo,
@@ -61,5 +73,8 @@ export default {
     rgba(220, 25, 95, 1) 100%,
     rgba(0, 212, 255, 1) 100%
   );
+}
+.v-btn::before {
+  background-color: transparent !important;
 }
 </style>
