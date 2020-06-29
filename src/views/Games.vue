@@ -76,10 +76,45 @@
 <script>
 import LogoPro from "@/assets/logo-pro.svg";
 import Image1 from "../assets/images/Octopath_Traveler-1.png";
-import Image2 from "../assets/images/NBA2k20.png";
-import Image3 from "../assets/images/Red_Dead_Redemption_2.png";
-import Image4 from "../assets/images/Mortal_Kombat_11.png";
-import Image5 from "../assets/images/DoomEternal.png";
+import Image2 from "../assets/images/images/Serious_Sam_Collection.png";
+import Image3 from "../assets/images/images/PlayerUnknown_s_Battlegrounds.png";
+import Image18 from "../assets/images/images/SteamWorld_Dig_2.png";
+import Image5 from "../assets/images/images/Little_Nightmares.png";
+import Image6 from "../assets/images/images/SteamWorld_Heist.png";
+import Image7 from "../assets/images/images/spitlings.png";
+import Image10 from "../assets/images/images/Zombie_Army_4__Dead_War.png";
+import Image9 from "../assets/images/images/gylt.png";
+import Image8 from "../assets/images/images/Stacks_on_Stacks__On_Stacks_.png";
+import Image4 from "../assets/images/images/SteamWorld_Quest__Hand_of_Gilgamech.png";
+import Image12 from "../assets/images/images/GRID.png";
+import Image13 from "../assets/images/images/The_Turing_Test.png";
+import Image14 from "../assets/images/images/Destiny_2__The_Collection.png";
+import Image15 from "../assets/images/images/Power_Rangers__Battle_for_the_Grid.png";
+import Image16 from "../assets/images/images/SUPERHOT.png";
+import Image17 from "../assets/images/images/Panzer_Dragoon_Remake.png";
+
+import OtherImage1 from "../assets/images/NBA2k20.png";
+import OtherImage2 from "../assets/images/otherImages/Shadow_of_the_Tomb_Raider__Definitive_Edition.png";
+import OtherImage3 from "../assets/images/otherImages/MotoGP20.png";
+import OtherImage4 from "../assets/images/otherImages/Tom_Clancy_s_The_Division_2.png";
+import OtherImage5 from "../assets/images/otherImages/SAMURAI_SHODOWN.png";
+import OtherImage6 from "../assets/images/otherImages/Steamworld_Dig.png";
+import OtherImage7 from "../assets/images/otherImages/Monopoly.png";
+import OtherImage8 from "../assets/images/otherImages/FootballManager2020.png";
+import OtherImage9 from "../assets/images/otherImages/Mortal_Kombat_11.png";
+import OtherImage10 from "../assets/images/otherImages/JustDance2020.png";
+import OtherImage11 from "../assets/images/otherImages/Metro_Exodus.png";
+import OtherImage12 from "../assets/images/otherImages/Supercross_3.png";
+import OtherImage13 from "../assets/images/otherImages/Borderlands3.png";
+import OtherImage14 from "../assets/images/otherImages/FarmingSimulator19.png";
+import OtherImage15 from "../assets/images/otherImages/Rage_2.png";
+
+import OtherImages16 from "../assets/images/Red_Dead_Redemption_2.png";
+import OtherImages17 from "../assets/images/otherImages/GhostReconBreakPoint.png";
+import OtherImages18 from "../assets/images/otherImages/DarskidersGenesis.png";
+import OtherImages20 from "../assets/images/otherImages/Wolfenstein__Youngblood.png";
+// import OtherImages3 from "../assets/images/Mortal_Kombat_11.png";
+// import OtherImages4 from "../assets/images/DoomEternal.png";
 
 export default {
   name: "Games",
@@ -88,195 +123,157 @@ export default {
     logoPro: LogoPro,
     images: [
       {
-        src:
-          Image1,
+        src: Image1,
         title: "Get Packed"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Serious_Sam_Collection.png",
+        src: Image2,
         title: "Serious Sam Collection"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/PlayerUnknown_s_Battlegrounds.png",
+        src: Image3,
         title: "PlayerUnknown's Battlegrounds"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/SteamWorld_Quest__Hand_of_Gilgamech.png",
+        src: Image4,
         title: "SteamWorld Quest: Hand of Gilgamech"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Little_Nightmares.png",
+        src: Image5,
         title: "Little Nightmares"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/SteamWorld_Heist.png",
+        src: Image6,
         title: "SteamWorld Heist"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/spitlings.png",
+        src: Image7,
         title: "Spitlings"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/SUPERHOT.png",
+        src: Image16,
         title: "SUPERHOT"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Panzer_Dragoon_Remake.png",
+        src: Image17,
         title: "Panzer Dragoon"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Zombie_Army_4__Dead_War.png",
+        src: Image10,
         title: "Zombie Army 4: Dead War"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/gylt.png",
+        src: Image9,
         title: "GYLT"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Stacks_on_Stacks__On_Stacks_.png",
+        src: Image8,
         title: "Stacks on Stacks (On Stacks)"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/SteamWorld_Dig_2.png",
+        src: Image18,
         title: "SteamWorld Dig 2"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/GRID.png",
+        src: Image12,
         title: "GRID"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/The_Turing_Test.png",
+        src: Image13,
         title: "The Turing Test"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Destiny_2__The_Collection.png",
+        src: Image14,
         title: "Destiny 2: The Collection"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Power_Rangers__Battle_for_the_Grid.png",
+        src: Image15,
         title: "Power Rangers: Battle for the Grid"
       }
     ],
     otherImages: [
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Tomb_Raider__Definitive_Edition.png",
+        src: OtherImage2,
         title: "Tomb Raider: Definitive Edition"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/NBA2k20.png",
+        src: OtherImage1,
         title: "NBA 2K20"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/MotoGP20.png",
+        src: OtherImage3,
         title: "MotoGP(TM) 20"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Tom_Clancy_s_The_Division_2.png",
+        src: OtherImage4,
         title: "Tom Clancy's The Division 2"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/SAMURAI_SHODOWN.png",
+        src: OtherImage5,
         title: "Samurai Shodown"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Steamworld_Dig.png",
+        src: OtherImage6,
         title: "Steamworld Dig"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Monopoly.png",
+        src: OtherImage7,
         title: "Monopoly"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/FootballManager2020.png",
+        src: OtherImage8,
         title: "Football Manager 2020"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Mortal_Kombat_11.png",
+        src: OtherImage9,
         title: "Mortal Kombat 11"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/JustDance2020.png",
+        src: OtherImage10,
         title: "Just Dance 2020"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Metro_Exodus.png",
+        src: OtherImage11,
         title: "Metro Exodus"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Supercross_3.png",
+        src: OtherImage12,
         title: "Supercross 3"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Borderlands3.png",
+        src: OtherImage13,
         title: "Borderlands 3"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/FarmingSimulator19.png",
+        src: OtherImage14,
         title: "Farming Simulator 19"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Shadow_of_the_Tomb_Raider__Definitive_Edition.png",
+        src: Image2,
         title: "Kine"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Rage_2.png",
+        src: OtherImage15,
         title: "Rage 2"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Red_Dead_Redemption_2.png",
+        src: OtherImages16,
         title: "Red Dead Redemption 2"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/GhostReconBreakPoint.png",
+        src: OtherImages17,
         title: "Ghost Recon Breakpoint"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/DarskidersGenesis.png",
+        src: OtherImages18,
         title: "Darksiders Genesis"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Octopath_Traveler.png",
+        src: Image1,
         title: "Octopath Traveler"
       },
       {
-        src:
-          "https://www.gstatic.com/stadia/gamers/landing_page/assets/games/Wolfenstein__Youngblood.png",
+        src: OtherImages20,
         title: "Wolfenstein Young Blood"
       }
     ]
