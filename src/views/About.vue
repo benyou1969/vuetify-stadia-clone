@@ -29,8 +29,8 @@
         <v-col sm="11" md="6">
           <v-card color="#202124" flat>
             <v-img
-              src="https://www.gstatic.com/stadia/gamers/landing_page/assets/pro_hero_h_2x.png"
-              lazy-src="https://www.gstatic.com/stadia/gamers/landing_page/assets/pro_hero_h_2x.png"
+              src="../assets/images/pro_hero_h_2x 2.png"
+              lazy-src="../assets/images/pro_hero_h_2x 2.png"
             ></v-img>
           </v-card>
         </v-col>
